@@ -1,0 +1,21 @@
+caso,conjunto,Episodios vistos (en la primera semana),Duración por episodio (min),"Vio la serie con alguien más (0 = no, 1 = sí)","Vio el anteúltimo episodio (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,2,50,0,0,0
+2,entrenamiento,9,59,0,0,0
+3,entrenamiento,8,49,0,1,1
+4,entrenamiento,6,51,1,1,1
+5,entrenamiento,5,44,0,0,0
+6,entrenamiento,5,64,0,0,0
+7,entrenamiento,8,37,1,1,1
+8,entrenamiento,7,37,1,1,1
+9,entrenamiento,7,34,0,1,1
+10,entrenamiento,8,53,0,0,0
+11,entrenamiento,7,21,0,1,1
+12,entrenamiento,4,68,1,0,0
+13,entrenamiento,3,22,0,0,0
+14,entrenamiento,2,28,1,1,1
+15,prueba,3,40,1,0,0
+16,prueba,8,32,1,1,1
+17,prueba,3,69,0,0,0
+18,prueba,1,63,1,0,0
+19,prueba,7,51,1,1,1
+20,prueba,8,20,0,1,1

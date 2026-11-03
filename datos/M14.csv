@@ -1,0 +1,21 @@
+caso,conjunto,Intentos fallidos (respuestas que no resolvieron),Tono del cliente (−1 (furioso) a 1 (cordial)),Monto en disputa (USD),resultado_real
+1,entrenamiento,5,0.8,7,0
+2,entrenamiento,2,-0.49,876,0
+3,entrenamiento,6,-0.33,1538,1
+4,entrenamiento,2,0.28,1194,0
+5,entrenamiento,6,0.22,911,1
+6,entrenamiento,5,-0.77,1489,1
+7,entrenamiento,5,-0.65,685,1
+8,entrenamiento,5,0.69,1057,0
+9,entrenamiento,2,-0.8,115,0
+10,entrenamiento,3,-0.89,196,1
+11,entrenamiento,3,0.68,1827,1
+12,entrenamiento,5,0.27,1540,1
+13,entrenamiento,1,-0.18,1555,0
+14,entrenamiento,5,0.49,1918,1
+15,prueba,3,-0.32,1664,1
+16,prueba,1,0.52,179,0
+17,prueba,1,-0.61,1555,0
+18,prueba,4,0.63,713,0
+19,prueba,3,0.28,1737,1
+20,prueba,3,0.77,1175,0

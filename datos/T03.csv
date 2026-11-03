@@ -1,0 +1,21 @@
+caso,conjunto,Ejecuciones por mes (cantidad),Minutos por ejecución (min),Excepciones (% de casos que no siguen la regla),Procesos automatizados del área (en el año),resultado_real
+1,entrenamiento,225,26,10,7,0
+2,entrenamiento,1111,42,37,30,0
+3,entrenamiento,1828,60,50,10,0
+4,entrenamiento,696,26,3,16,0
+5,entrenamiento,1312,26,29,14,1
+6,entrenamiento,1993,45,36,0,1
+7,entrenamiento,235,23,49,24,0
+8,entrenamiento,400,45,44,18,0
+9,entrenamiento,1279,52,35,23,1
+10,entrenamiento,1534,39,14,8,1
+11,entrenamiento,877,37,30,10,0
+12,entrenamiento,653,23,34,30,0
+13,entrenamiento,1468,48,16,21,1
+14,entrenamiento,1485,48,25,2,1
+15,prueba,1276,58,0,22,1
+16,prueba,357,26,30,4,0
+17,prueba,194,38,31,30,0
+18,prueba,1460,17,9,17,1
+19,prueba,1605,32,9,13,1
+20,prueba,1393,42,44,6,0

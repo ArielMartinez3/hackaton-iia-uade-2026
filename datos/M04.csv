@@ -1,0 +1,21 @@
+caso,conjunto,Afinidad con su historial (0 a 1),Duración (min),Calificación del título (0 a 10),Clics esperados en la miniatura (% estimado),resultado_real
+1,entrenamiento,0.33,115,4.2,22,0
+2,entrenamiento,0.75,172,9.1,3,1
+3,entrenamiento,0.57,169,3.9,9,0
+4,entrenamiento,0.26,55,7.3,4,1
+5,entrenamiento,0.14,164,4.0,23,0
+6,entrenamiento,0.64,69,5.0,17,1
+7,entrenamiento,0.71,34,8.4,2,1
+8,entrenamiento,0.66,140,7.7,3,1
+9,entrenamiento,0.96,27,9.4,20,1
+10,entrenamiento,0.59,50,7.6,21,1
+11,entrenamiento,0.03,176,5.3,22,0
+12,entrenamiento,0.19,61,6.2,17,0
+13,entrenamiento,0.11,106,6.4,24,0
+14,entrenamiento,0.71,158,5.5,24,0
+15,prueba,0.83,38,9.3,4,1
+16,prueba,0.48,135,6.3,19,0
+17,prueba,0.35,103,5.4,18,0
+18,prueba,0.34,116,9.3,8,0
+19,prueba,0.98,92,3.3,20,1
+20,prueba,0.71,55,3.9,17,0

@@ -1,0 +1,21 @@
+caso,conjunto,Minutos en reserva (en la temporada),Goles + asistencias (cada 90 minutos),Edad (años),Partidos en Primera al año siguiente (cantidad),resultado_real
+1,entrenamiento,1288,0.96,19,25,1
+2,entrenamiento,323,0.45,18,0,0
+3,entrenamiento,905,0.68,20,4,0
+4,entrenamiento,2044,0.78,17,25,1
+5,entrenamiento,2155,0.4,18,30,1
+6,entrenamiento,1959,0.58,19,22,1
+7,entrenamiento,988,0.18,17,4,0
+8,entrenamiento,1136,0.08,21,1,0
+9,entrenamiento,821,0.51,17,3,0
+10,entrenamiento,482,0.17,21,4,0
+11,entrenamiento,1724,0.59,20,24,1
+12,entrenamiento,617,0.13,21,2,0
+13,entrenamiento,1308,0.38,18,1,0
+14,entrenamiento,1159,0.97,20,17,1
+15,prueba,2196,0.92,21,17,1
+16,prueba,1722,0.09,19,5,0
+17,prueba,2506,0.43,18,14,1
+18,prueba,480,0.74,18,27,1
+19,prueba,1002,0.87,17,15,1
+20,prueba,1451,0.37,17,2,0

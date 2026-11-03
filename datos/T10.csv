@@ -1,0 +1,21 @@
+caso,conjunto,Presupuesto en CGI (% del total),"Es secuela o franquicia (0 = no, 1 = sí)",Interés en el tráiler (millones de vistas la primera semana),Recaudación del primer fin de semana (% del presupuesto),resultado_real
+1,entrenamiento,59,1,16,13,0
+2,entrenamiento,18,1,38,109,1
+3,entrenamiento,30,0,48,23,0
+4,entrenamiento,12,0,92,103,1
+5,entrenamiento,45,1,18,14,0
+6,entrenamiento,62,1,23,17,0
+7,entrenamiento,47,0,113,47,1
+8,entrenamiento,33,0,67,11,0
+9,entrenamiento,62,1,10,22,0
+10,entrenamiento,49,0,27,24,0
+11,entrenamiento,40,0,115,107,1
+12,entrenamiento,18,1,41,75,1
+13,entrenamiento,61,0,63,14,0
+14,entrenamiento,27,0,66,29,0
+15,prueba,44,0,92,6,0
+16,prueba,32,1,3,6,0
+17,prueba,11,0,83,58,1
+18,prueba,22,1,34,95,1
+19,prueba,53,0,41,7,0
+20,prueba,59,1,58,114,1

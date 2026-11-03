@@ -1,0 +1,21 @@
+caso,conjunto,Vida del NPC (%),Vida del jugador (%),Distancia (metros),resultado_real
+1,entrenamiento,75,18,19,1
+2,entrenamiento,50,68,6,0
+3,entrenamiento,59,20,1,1
+4,entrenamiento,85,29,5,1
+5,entrenamiento,51,69,1,0
+6,entrenamiento,13,15,13,1
+7,entrenamiento,64,45,28,0
+8,entrenamiento,86,8,14,1
+9,entrenamiento,52,76,18,0
+10,entrenamiento,43,77,26,0
+11,entrenamiento,45,98,30,0
+12,entrenamiento,99,90,14,0
+13,entrenamiento,15,33,25,0
+14,entrenamiento,32,59,7,0
+15,prueba,41,66,3,0
+16,prueba,53,63,1,1
+17,prueba,20,20,19,0
+18,prueba,54,8,12,1
+19,prueba,37,29,14,1
+20,prueba,22,13,13,1

@@ -1,0 +1,21 @@
+caso,conjunto,Temperatura de suelo a 5 cm (°C),Humedad de suelo (% de capacidad de campo),Lluvia pronosticada (mm en 7 días),Plantas logradas a los 20 días (plantas por m²),resultado_real
+1,entrenamiento,7.8,77,18,3.8,0
+2,entrenamiento,14.4,55,60,7.1,1
+3,entrenamiento,21.4,70,0,7.4,1
+4,entrenamiento,13.0,67,54,4.2,0
+5,entrenamiento,13.1,69,27,5.6,0
+6,entrenamiento,19.5,72,35,8.0,1
+7,entrenamiento,8.9,63,57,5.4,0
+8,entrenamiento,21.5,89,41,7.8,1
+9,entrenamiento,21.9,61,14,7.7,1
+10,entrenamiento,11.4,62,36,5.7,0
+11,entrenamiento,10.0,76,15,4.1,0
+12,entrenamiento,9.3,36,16,4.9,0
+13,entrenamiento,20.1,31,30,7.9,1
+14,entrenamiento,10.7,77,19,4.0,0
+15,prueba,15.1,81,28,8.0,1
+16,prueba,13.5,58,58,5.4,0
+17,prueba,19.9,77,13,8.2,1
+18,prueba,21.3,80,18,7.7,1
+19,prueba,8.1,77,55,3.6,0
+20,prueba,14.9,37,42,4.0,0

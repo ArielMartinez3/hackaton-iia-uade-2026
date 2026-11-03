@@ -1,0 +1,21 @@
+caso,conjunto,Coincidencia con su historial (0 a 1),Popularidad del título (percentil),"Es estreno (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,0.22,34,0,0
+2,entrenamiento,0.45,26,0,0
+3,entrenamiento,0.99,85,1,1
+4,entrenamiento,0.48,58,1,0
+5,entrenamiento,0.73,68,0,0
+6,entrenamiento,0.67,47,1,0
+7,entrenamiento,0.13,93,0,0
+8,entrenamiento,0.63,49,1,0
+9,entrenamiento,0.93,36,1,1
+10,entrenamiento,0.69,89,0,0
+11,entrenamiento,0.41,5,1,0
+12,entrenamiento,0.45,62,0,0
+13,entrenamiento,0.01,2,1,0
+14,entrenamiento,0.47,23,1,0
+15,prueba,0.31,29,0,0
+16,prueba,0.78,98,0,1
+17,prueba,0.32,83,0,0
+18,prueba,0.12,11,0,0
+19,prueba,0.38,48,1,0
+20,prueba,0.11,16,0,0

@@ -1,0 +1,21 @@
+caso,conjunto,Intentos fallidos previos (en la última hora),Distancia al último acceso (km),Datos descargados (MB en la sesión),resultado_real
+1,entrenamiento,1,767,692,0
+2,entrenamiento,2,8331,594,0
+3,entrenamiento,12,1592,54,0
+4,entrenamiento,3,796,499,0
+5,entrenamiento,9,5393,378,0
+6,entrenamiento,3,7361,288,0
+7,entrenamiento,0,8420,448,0
+8,entrenamiento,6,2861,300,0
+9,entrenamiento,6,5928,217,0
+10,entrenamiento,14,8475,513,1
+11,entrenamiento,15,6761,245,1
+12,entrenamiento,7,806,92,0
+13,entrenamiento,7,4079,706,0
+14,entrenamiento,6,1934,701,0
+15,prueba,13,2688,42,0
+16,prueba,14,57,645,0
+17,prueba,13,1119,612,0
+18,prueba,15,2098,615,0
+19,prueba,15,5747,335,1
+20,prueba,1,6373,231,0

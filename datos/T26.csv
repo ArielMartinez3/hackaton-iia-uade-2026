@@ -1,0 +1,21 @@
+caso,conjunto,Aumento de carga propuesto (% sobre la semana anterior),Técnica evaluada (1 a 10),Horas de sueño (promedio),Dolor reportado al día siguiente (escala 0 a 10),resultado_real
+1,entrenamiento,6,8,7.4,0,0
+2,entrenamiento,13,2,6.7,2,0
+3,entrenamiento,14,3,8.7,3,0
+4,entrenamiento,21,2,8.8,8,1
+5,entrenamiento,6,7,6.6,2,0
+6,entrenamiento,22,5,7.4,7,1
+7,entrenamiento,13,5,6.4,3,0
+8,entrenamiento,0,8,7.5,3,0
+9,entrenamiento,1,4,6.3,0,0
+10,entrenamiento,23,3,6.2,6,1
+11,entrenamiento,13,7,8.1,2,0
+12,entrenamiento,12,2,5.4,9,1
+13,entrenamiento,21,1,8.6,8,1
+14,entrenamiento,11,9,8.3,0,0
+15,prueba,16,3,7.8,9,1
+16,prueba,13,2,5.5,9,1
+17,prueba,3,9,6.9,2,0
+18,prueba,19,4,8.8,2,0
+19,prueba,23,3,5.3,8,1
+20,prueba,17,2,8.9,2,0

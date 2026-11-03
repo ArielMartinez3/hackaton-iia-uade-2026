@@ -1,0 +1,21 @@
+caso,conjunto,Vida del jugador (%),Enemigos cerca (cantidad),Pociones restantes (cantidad),resultado_real
+1,entrenamiento,14,5,3,1
+2,entrenamiento,12,1,1,0
+3,entrenamiento,34,4,2,1
+4,entrenamiento,81,2,5,0
+5,entrenamiento,50,5,3,1
+6,entrenamiento,27,3,4,1
+7,entrenamiento,8,5,2,1
+8,entrenamiento,41,4,2,0
+9,entrenamiento,6,4,4,1
+10,entrenamiento,77,3,4,0
+11,entrenamiento,71,4,3,1
+12,entrenamiento,37,4,1,1
+13,entrenamiento,64,2,3,0
+14,entrenamiento,76,6,2,1
+15,prueba,71,1,3,0
+16,prueba,73,3,3,0
+17,prueba,83,2,2,0
+18,prueba,46,6,4,1
+19,prueba,11,4,2,1
+20,prueba,97,4,3,0

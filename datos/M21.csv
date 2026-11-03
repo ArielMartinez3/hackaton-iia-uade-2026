@@ -1,0 +1,21 @@
+caso,conjunto,Humedad relativa (%),Viento (km/h),Días sin lluvia (días),resultado_real
+1,entrenamiento,59,42,26,0
+2,entrenamiento,16,31,3,1
+3,entrenamiento,65,38,23,0
+4,entrenamiento,68,13,32,0
+5,entrenamiento,42,20,34,0
+6,entrenamiento,68,5,18,0
+7,entrenamiento,26,60,10,1
+8,entrenamiento,77,14,23,0
+9,entrenamiento,45,40,21,0
+10,entrenamiento,75,53,44,1
+11,entrenamiento,27,6,23,0
+12,entrenamiento,65,44,43,1
+13,entrenamiento,13,32,28,1
+14,entrenamiento,21,48,32,1
+15,prueba,37,23,6,0
+16,prueba,24,24,21,0
+17,prueba,75,16,26,0
+18,prueba,57,47,26,1
+19,prueba,29,7,42,1
+20,prueba,59,57,44,1

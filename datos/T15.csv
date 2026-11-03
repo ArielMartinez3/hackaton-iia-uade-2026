@@ -1,0 +1,21 @@
+caso,conjunto,Aceleración pico (g),Aceleración rotacional (miles de rad/s²),Impactos previos en el partido (cantidad),resultado_real
+1,entrenamiento,72,8.7,8,1
+2,entrenamiento,68,7.8,6,1
+3,entrenamiento,38,5.4,2,1
+4,entrenamiento,102,3.3,5,1
+5,entrenamiento,73,6.5,8,1
+6,entrenamiento,43,7.6,3,1
+7,entrenamiento,116,6.8,5,1
+8,entrenamiento,91,2.2,7,1
+9,entrenamiento,48,4.7,0,0
+10,entrenamiento,31,1.1,6,0
+11,entrenamiento,28,1.4,3,0
+12,entrenamiento,45,1.9,5,0
+13,entrenamiento,36,1.7,5,0
+14,entrenamiento,22,1.9,2,0
+15,prueba,14,7.2,6,0
+16,prueba,105,1.7,5,0
+17,prueba,88,3.4,6,1
+18,prueba,56,8.4,1,1
+19,prueba,48,6.3,3,1
+20,prueba,66,2.7,2,0

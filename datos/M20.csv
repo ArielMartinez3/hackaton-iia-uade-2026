@@ -1,0 +1,21 @@
+caso,conjunto,Disparos a la cabeza (% de los impactos),Tiempo de reacción (ms),Horas en la cuenta (h totales),resultado_real
+1,entrenamiento,58,398,1960,0
+2,entrenamiento,20,125,772,0
+3,entrenamiento,18,355,1777,0
+4,entrenamiento,79,311,607,0
+5,entrenamiento,64,329,1358,0
+6,entrenamiento,61,282,1849,0
+7,entrenamiento,83,123,1988,0
+8,entrenamiento,36,123,1159,0
+9,entrenamiento,33,150,1398,0
+10,entrenamiento,88,160,254,1
+11,entrenamiento,79,328,1690,0
+12,entrenamiento,12,320,768,0
+13,entrenamiento,66,315,715,0
+14,entrenamiento,82,157,172,1
+15,prueba,75,292,1993,0
+16,prueba,64,374,1914,0
+17,prueba,51,393,1772,0
+18,prueba,74,92,467,1
+19,prueba,10,298,950,0
+20,prueba,48,366,1991,0

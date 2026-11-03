@@ -1,0 +1,21 @@
+caso,conjunto,Degradación del neumático (décimas por vuelta),Distancia al auto de adelante (s),Vueltas restantes (cantidad),Duración de la parada (s),resultado_real
+1,entrenamiento,2.0,2.1,13,2.9,0
+2,entrenamiento,1.9,2.5,24,3.4,0
+3,entrenamiento,2.1,2.7,42,2.7,0
+4,entrenamiento,0.8,2.6,7,2.2,0
+5,entrenamiento,4.9,0.7,31,3.4,1
+6,entrenamiento,3.9,4.8,24,3.6,0
+7,entrenamiento,2.7,0.3,22,2.4,1
+8,entrenamiento,5.4,1.5,7,2.0,1
+9,entrenamiento,4.1,4.1,22,3.9,0
+10,entrenamiento,5.1,0.9,40,2.8,1
+11,entrenamiento,0.8,2.5,9,2.3,0
+12,entrenamiento,5.9,4.1,46,4.0,0
+13,entrenamiento,2.5,2.6,16,2.7,0
+14,entrenamiento,5.5,3.8,36,4.0,0
+15,prueba,4.6,4.2,28,3.1,0
+16,prueba,5.4,3.1,43,2.1,1
+17,prueba,4.3,3.6,45,2.5,1
+18,prueba,0.7,0.9,38,3.2,0
+19,prueba,5.5,3.3,29,3.6,1
+20,prueba,4.3,1.9,37,3.1,1

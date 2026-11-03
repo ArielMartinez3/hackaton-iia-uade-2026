@@ -1,0 +1,21 @@
+caso,conjunto,Diferencia de ranking (puestos (positivo = 9z mejor rankeado)),Rondas de pistola ganadas (% en el torneo),"Mapa elegido por 9z (0 = no, 1 = sí)",Rondas ganadas en el primer tiempo (de 12),resultado_real
+1,entrenamiento,-19,66,0,2,0
+2,entrenamiento,7,29,1,9,1
+3,entrenamiento,-6,23,1,4,0
+4,entrenamiento,-7,29,0,4,0
+5,entrenamiento,2,68,1,8,1
+6,entrenamiento,5,79,1,7,1
+7,entrenamiento,11,76,0,9,1
+8,entrenamiento,27,31,1,9,1
+9,entrenamiento,-3,58,0,5,0
+10,entrenamiento,12,38,1,7,1
+11,entrenamiento,2,64,0,4,0
+12,entrenamiento,-4,42,0,3,0
+13,entrenamiento,-16,54,0,2,0
+14,entrenamiento,-5,70,1,8,1
+15,prueba,-4,63,0,8,1
+16,prueba,-29,29,0,3,0
+17,prueba,0,46,1,9,1
+18,prueba,27,67,0,8,1
+19,prueba,20,38,0,8,1
+20,prueba,-16,22,1,3,0

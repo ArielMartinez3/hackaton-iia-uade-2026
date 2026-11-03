@@ -1,0 +1,21 @@
+caso,conjunto,Horas jugadas (por semana),Nivel de cuenta (nivel),Compras previas (cantidad),resultado_real
+1,entrenamiento,15,61,2,0
+2,entrenamiento,28,5,5,1
+3,entrenamiento,23,60,1,0
+4,entrenamiento,16,66,0,0
+5,entrenamiento,4,78,3,0
+6,entrenamiento,26,42,2,0
+7,entrenamiento,25,22,3,0
+8,entrenamiento,12,60,0,0
+9,entrenamiento,18,5,2,0
+10,entrenamiento,1,21,1,0
+11,entrenamiento,0,73,1,0
+12,entrenamiento,7,54,0,0
+13,entrenamiento,12,4,1,0
+14,entrenamiento,28,26,5,1
+15,prueba,21,24,5,0
+16,prueba,20,98,1,0
+17,prueba,16,54,4,0
+18,prueba,15,85,4,0
+19,prueba,18,90,5,1
+20,prueba,10,3,4,0

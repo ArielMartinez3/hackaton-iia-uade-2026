@@ -1,0 +1,21 @@
+caso,conjunto,Contenido del mismo tema (% de lo consumido),Fuentes distintas (consumidas en la semana),Interacciones con opiniones opuestas (en la semana),Tiempo en la plataforma (min por día),resultado_real
+1,entrenamiento,96,39,5,250,1
+2,entrenamiento,59,4,7,58,1
+3,entrenamiento,83,28,18,84,0
+4,entrenamiento,51,11,19,181,0
+5,entrenamiento,96,2,4,30,1
+6,entrenamiento,86,34,18,76,0
+7,entrenamiento,67,29,2,144,1
+8,entrenamiento,35,7,10,102,0
+9,entrenamiento,50,8,18,300,0
+10,entrenamiento,45,38,5,98,0
+11,entrenamiento,38,4,9,124,1
+12,entrenamiento,91,20,11,72,1
+13,entrenamiento,39,25,12,210,0
+14,entrenamiento,90,32,5,69,1
+15,prueba,77,17,17,266,0
+16,prueba,77,27,15,73,0
+17,prueba,64,31,11,168,0
+18,prueba,64,30,4,77,1
+19,prueba,50,18,5,300,0
+20,prueba,65,14,12,173,1

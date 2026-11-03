@@ -1,0 +1,21 @@
+caso,conjunto,Días libres (en el mes),Horas de sueño (promedio),Partidas oficiales (en el mes),Horas de práctica (por día),resultado_real
+1,entrenamiento,3,6.8,5,12,0
+2,entrenamiento,2,8.1,17,13,1
+3,entrenamiento,5,8.3,5,13,0
+4,entrenamiento,0,5.7,14,11,1
+5,entrenamiento,1,8.1,21,8,1
+6,entrenamiento,6,5.4,29,8,1
+7,entrenamiento,6,7.7,18,13,0
+8,entrenamiento,8,6.3,5,8,0
+9,entrenamiento,2,7.7,16,8,0
+10,entrenamiento,6,5.3,15,11,0
+11,entrenamiento,2,5.6,14,12,1
+12,entrenamiento,7,5.9,17,13,0
+13,entrenamiento,6,8.0,9,9,0
+14,entrenamiento,7,7.2,15,11,0
+15,prueba,7,5.8,16,12,0
+16,prueba,5,5.2,23,6,1
+17,prueba,6,7.1,25,14,0
+18,prueba,1,8.0,21,6,1
+19,prueba,8,6.9,18,11,0
+20,prueba,4,6.0,9,8,1

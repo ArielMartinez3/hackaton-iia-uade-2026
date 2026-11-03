@@ -1,0 +1,21 @@
+caso,conjunto,Meses facturando (meses),Deuda sobre ingresos (relación),Cheques rechazados (último año),Días de atraso en la primera cuota (días),resultado_real
+1,entrenamiento,44,0.23,7,0,1
+2,entrenamiento,14,0.97,2,30,0
+3,entrenamiento,38,0.79,4,0,1
+4,entrenamiento,34,0.6,6,69,0
+5,entrenamiento,7,0.86,4,27,0
+6,entrenamiento,113,0.15,6,0,1
+7,entrenamiento,25,0.1,3,0,1
+8,entrenamiento,23,0.07,1,0,1
+9,entrenamiento,51,1.15,4,61,0
+10,entrenamiento,23,0.89,2,63,0
+11,entrenamiento,64,1.1,6,21,0
+12,entrenamiento,48,0.12,2,0,1
+13,entrenamiento,52,0.76,0,0,1
+14,entrenamiento,72,0.2,8,84,0
+15,prueba,22,1.3,4,69,0
+16,prueba,9,1.38,3,20,0
+17,prueba,51,1.3,8,38,0
+18,prueba,68,0.49,2,0,1
+19,prueba,54,0.26,6,0,1
+20,prueba,20,0.14,8,22,0

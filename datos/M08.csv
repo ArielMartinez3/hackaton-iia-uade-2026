@@ -1,0 +1,21 @@
+caso,conjunto,Fondo más largo (km),Ritmo en 10K (min por km),Semanas sin lesión (de las últimas 12),Km semanales (km),resultado_real
+1,entrenamiento,29,6.6,10,72,0
+2,entrenamiento,13,6.5,8,61,0
+3,entrenamiento,31,4.3,5,25,1
+4,entrenamiento,27,6.2,7,45,0
+5,entrenamiento,33,6.4,12,78,1
+6,entrenamiento,33,5.1,7,85,1
+7,entrenamiento,16,5.2,6,74,0
+8,entrenamiento,15,4.6,8,25,1
+9,entrenamiento,26,5.3,5,83,1
+10,entrenamiento,26,6.8,10,95,0
+11,entrenamiento,17,6.2,9,72,0
+12,entrenamiento,31,5.1,9,32,1
+13,entrenamiento,26,5.4,6,66,1
+14,entrenamiento,31,5.8,5,53,0
+15,prueba,26,6.1,6,69,0
+16,prueba,17,5.8,11,52,0
+17,prueba,31,5.9,6,39,1
+18,prueba,31,5.8,12,26,1
+19,prueba,22,4.8,7,41,1
+20,prueba,14,6.5,9,59,0

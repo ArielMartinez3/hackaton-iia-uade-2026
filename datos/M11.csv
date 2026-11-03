@@ -1,0 +1,21 @@
+caso,conjunto,Goles recibidos por el rival (promedio por partido),Pases al área recibidos (promedio últimos 5 partidos),"Local (0 = visitante, 1 = Bombonera)",Remates totales (en el partido anterior),resultado_real
+1,entrenamiento,2.1,12,1,0,1
+2,entrenamiento,0.9,12,1,7,0
+3,entrenamiento,1.8,11,0,6,1
+4,entrenamiento,1.7,12,1,0,1
+5,entrenamiento,0.7,8,0,8,0
+6,entrenamiento,1.2,11,0,7,0
+7,entrenamiento,0.5,6,0,5,0
+8,entrenamiento,2.2,13,0,7,1
+9,entrenamiento,2.2,12,1,4,1
+10,entrenamiento,1.1,7,1,6,0
+11,entrenamiento,0.7,7,0,4,0
+12,entrenamiento,0.6,10,1,5,1
+13,entrenamiento,1.0,14,1,8,1
+14,entrenamiento,1.8,7,0,4,0
+15,prueba,1.9,11,1,3,1
+16,prueba,0.9,9,0,1,0
+17,prueba,0.7,5,0,9,0
+18,prueba,0.7,4,0,3,0
+19,prueba,2.2,10,0,1,1
+20,prueba,1.2,5,0,9,0

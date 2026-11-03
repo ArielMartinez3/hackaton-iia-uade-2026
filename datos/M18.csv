@@ -1,0 +1,21 @@
+caso,conjunto,Distancia a la marca de corte (segundos (negativo = mejor que el corte)),Sesiones de entrenamiento (por semana),Edad (años),Puesto en la semifinal (puesto (1 a 16)),resultado_real
+1,entrenamiento,1.32,9,16,6,1
+2,entrenamiento,-0.02,10,19,7,1
+3,entrenamiento,-0.59,7,16,8,1
+4,entrenamiento,-0.06,9,15,6,1
+5,entrenamiento,2.31,5,15,13,0
+6,entrenamiento,-1.15,10,18,7,1
+7,entrenamiento,1.22,8,17,12,0
+8,entrenamiento,1.03,7,17,13,0
+9,entrenamiento,1.41,6,14,14,0
+10,entrenamiento,2.06,8,18,13,0
+11,entrenamiento,1.96,11,19,1,1
+12,entrenamiento,0.29,11,18,1,1
+13,entrenamiento,-0.11,5,14,13,0
+14,entrenamiento,1.16,6,18,15,0
+15,prueba,0.82,7,16,13,0
+16,prueba,1.45,8,18,7,1
+17,prueba,-1.27,6,14,8,1
+18,prueba,2.25,8,17,11,0
+19,prueba,0.74,6,15,10,0
+20,prueba,1.79,10,18,12,0

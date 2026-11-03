@@ -1,0 +1,21 @@
+caso,conjunto,Términos ofensivos (detectados en el mensaje),Mensajes del autor (en el último minuto),Antigüedad de la cuenta (días),resultado_real
+1,entrenamiento,4,9,422,1
+2,entrenamiento,2,5,129,0
+3,entrenamiento,1,11,637,0
+4,entrenamiento,4,14,824,1
+5,entrenamiento,1,3,794,0
+6,entrenamiento,3,12,654,1
+7,entrenamiento,1,8,90,0
+8,entrenamiento,0,16,634,0
+9,entrenamiento,6,10,471,1
+10,entrenamiento,5,13,38,1
+11,entrenamiento,1,17,379,0
+12,entrenamiento,3,2,745,0
+13,entrenamiento,4,3,512,1
+14,entrenamiento,4,7,164,1
+15,prueba,5,16,613,1
+16,prueba,5,3,626,1
+17,prueba,4,17,461,1
+18,prueba,5,20,513,1
+19,prueba,2,6,333,0
+20,prueba,1,4,559,0

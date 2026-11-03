@@ -1,0 +1,21 @@
+caso,conjunto,Temperatura (°C),Leucocitos (miles por µL),Proteína C reactiva (mg/L),resultado_real
+1,entrenamiento,37.7,14.8,47,0
+2,entrenamiento,37.0,12.0,5,0
+3,entrenamiento,39.6,15.3,80,1
+4,entrenamiento,38.5,7.8,96,0
+5,entrenamiento,36.6,12.4,178,1
+6,entrenamiento,37.2,5.8,188,0
+7,entrenamiento,38.5,22.1,155,1
+8,entrenamiento,38.5,9.4,18,0
+9,entrenamiento,36.8,13.8,159,1
+10,entrenamiento,37.5,20.8,68,1
+11,entrenamiento,37.7,9.3,42,0
+12,entrenamiento,40.1,16.9,171,1
+13,entrenamiento,38.1,11.5,135,0
+14,entrenamiento,39.7,18.2,127,1
+15,prueba,39.7,22.3,100,1
+16,prueba,38.7,24.4,29,1
+17,prueba,37.6,10.7,79,0
+18,prueba,37.8,16.6,60,1
+19,prueba,39.3,4.9,36,0
+20,prueba,37.3,19.7,129,1

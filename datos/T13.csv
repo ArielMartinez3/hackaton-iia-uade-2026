@@ -1,0 +1,21 @@
+caso,conjunto,Horas de mojado foliar (en la semana),Temperatura media (°C),Severidad en lotes vecinos (% de hojas afectadas),resultado_real
+1,entrenamiento,35,28.2,15,1
+2,entrenamiento,1,18.4,8,0
+3,entrenamiento,61,28.6,8,1
+4,entrenamiento,1,15.9,14,0
+5,entrenamiento,67,15.4,22,1
+6,entrenamiento,64,26.0,3,1
+7,entrenamiento,10,16.7,22,0
+8,entrenamiento,50,26.7,24,1
+9,entrenamiento,1,28.4,17,0
+10,entrenamiento,19,20.5,15,0
+11,entrenamiento,69,22.5,4,0
+12,entrenamiento,6,19.6,8,0
+13,entrenamiento,67,24.4,30,1
+14,entrenamiento,28,22.7,18,1
+15,prueba,18,21.7,17,0
+16,prueba,63,16.2,21,1
+17,prueba,21,18.6,21,0
+18,prueba,8,15.3,28,1
+19,prueba,48,20.3,26,1
+20,prueba,3,23.7,2,0

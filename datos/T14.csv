@@ -1,0 +1,21 @@
+caso,conjunto,Visitas (en el último mes),Antigüedad (meses),Clases grupales (por semana),resultado_real
+1,entrenamiento,8,14,1,1
+2,entrenamiento,17,35,4,0
+3,entrenamiento,8,29,4,0
+4,entrenamiento,22,4,2,1
+5,entrenamiento,7,25,2,1
+6,entrenamiento,17,3,5,0
+7,entrenamiento,9,18,3,1
+8,entrenamiento,7,17,5,0
+9,entrenamiento,24,45,1,0
+10,entrenamiento,0,12,4,1
+11,entrenamiento,4,10,3,1
+12,entrenamiento,3,38,2,1
+13,entrenamiento,10,37,1,1
+14,entrenamiento,20,44,3,0
+15,prueba,19,10,3,1
+16,prueba,13,29,1,1
+17,prueba,19,36,4,0
+18,prueba,20,35,2,0
+19,prueba,11,11,4,1
+20,prueba,21,47,3,0

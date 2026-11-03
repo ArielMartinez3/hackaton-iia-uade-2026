@@ -1,0 +1,21 @@
+caso,conjunto,Diferencia de nivel promedio (puntos de MMR),"Grupo armado (0 = no, 1 = un equipo es grupo premade)",Diferencia de partidas jugadas (promedio),Tiempo de espera en cola (segundos),resultado_real
+1,entrenamiento,325,1,145,193,0
+2,entrenamiento,44,1,455,148,0
+3,entrenamiento,337,1,486,164,1
+4,entrenamiento,497,0,737,46,1
+5,entrenamiento,238,1,170,241,1
+6,entrenamiento,434,1,76,218,1
+7,entrenamiento,398,0,509,119,0
+8,entrenamiento,62,1,522,98,0
+9,entrenamiento,312,0,663,279,0
+10,entrenamiento,71,0,646,291,0
+11,entrenamiento,408,0,601,10,1
+12,entrenamiento,523,0,37,231,0
+13,entrenamiento,173,1,244,206,0
+14,entrenamiento,491,1,273,141,1
+15,prueba,330,0,761,218,0
+16,prueba,532,0,230,174,0
+17,prueba,16,1,197,262,0
+18,prueba,375,1,444,257,1
+19,prueba,225,1,33,265,0
+20,prueba,400,0,723,61,1

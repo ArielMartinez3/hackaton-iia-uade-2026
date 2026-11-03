@@ -1,0 +1,21 @@
+caso,conjunto,Entregas tardías (% del último trimestre),Reclamos abiertos (cantidad),Antigüedad como cliente (meses),resultado_real
+1,entrenamiento,39,6,1,1
+2,entrenamiento,31,6,35,1
+3,entrenamiento,4,5,21,0
+4,entrenamiento,1,9,45,0
+5,entrenamiento,18,2,48,0
+6,entrenamiento,0,1,9,0
+7,entrenamiento,21,6,29,1
+8,entrenamiento,39,8,46,1
+9,entrenamiento,34,10,22,1
+10,entrenamiento,15,6,50,1
+11,entrenamiento,28,8,24,1
+12,entrenamiento,40,8,45,1
+13,entrenamiento,1,8,41,0
+14,entrenamiento,33,6,14,1
+15,prueba,5,6,17,1
+16,prueba,13,6,50,0
+17,prueba,2,5,20,0
+18,prueba,6,9,49,0
+19,prueba,20,4,6,1
+20,prueba,24,3,25,0

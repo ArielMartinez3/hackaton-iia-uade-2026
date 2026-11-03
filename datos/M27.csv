@@ -1,0 +1,21 @@
+caso,conjunto,Asimetría facial (escala 0 a 3),Debilidad en un brazo (escala 0 a 4),Dificultad para hablar (escala 0 a 3),resultado_real
+1,entrenamiento,0,1,0,0
+2,entrenamiento,2,0,2,1
+3,entrenamiento,2,1,2,1
+4,entrenamiento,0,3,1,0
+5,entrenamiento,3,1,3,1
+6,entrenamiento,2,3,0,1
+7,entrenamiento,1,1,2,0
+8,entrenamiento,0,3,1,0
+9,entrenamiento,1,4,2,1
+10,entrenamiento,2,2,1,0
+11,entrenamiento,3,2,3,1
+12,entrenamiento,1,3,1,0
+13,entrenamiento,1,0,1,0
+14,entrenamiento,1,1,1,0
+15,prueba,1,0,2,0
+16,prueba,2,4,1,1
+17,prueba,2,3,2,1
+18,prueba,2,4,0,1
+19,prueba,1,1,2,0
+20,prueba,3,0,2,1

@@ -1,0 +1,21 @@
+caso,conjunto,Variabilidad de frecuencia cardíaca (ms),Esfuerzo percibido (1 a 10),Horas de sueño (promedio por noche),Carga semanal (unidades arbitrarias),resultado_real
+1,entrenamiento,31,8,8.2,1491,1
+2,entrenamiento,88,5,8.5,2175,0
+3,entrenamiento,98,8,5.6,3042,0
+4,entrenamiento,50,6,7.2,3659,1
+5,entrenamiento,91,8,8.6,3940,0
+6,entrenamiento,78,6,8.0,4192,0
+7,entrenamiento,106,8,5.0,1482,1
+8,entrenamiento,53,8,5.7,2751,1
+9,entrenamiento,82,8,8.1,3081,1
+10,entrenamiento,80,6,7.6,1501,0
+11,entrenamiento,20,9,7.4,3995,1
+12,entrenamiento,47,7,6.5,4340,1
+13,entrenamiento,84,8,5.6,3039,1
+14,entrenamiento,32,10,7.0,1000,1
+15,prueba,26,5,7.3,1000,1
+16,prueba,50,2,8.2,1859,0
+17,prueba,101,3,6.5,2347,0
+18,prueba,91,5,5.6,4464,0
+19,prueba,69,3,6.8,2498,0
+20,prueba,98,6,5.3,1063,1

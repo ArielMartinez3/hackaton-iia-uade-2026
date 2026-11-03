@@ -1,0 +1,21 @@
+caso,conjunto,Entregas a tiempo (%),Horas en el campus virtual (por semana),Nota del cuestionario 1 (0 a 10),"Se anotó al recuperatorio (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,56,9.4,9,0,0
+2,entrenamiento,91,5.2,3,0,0
+3,entrenamiento,66,11.6,3,0,0
+4,entrenamiento,9,4.4,8,1,1
+5,entrenamiento,83,12.4,2,0,0
+6,entrenamiento,92,15.0,9,0,0
+7,entrenamiento,43,14.1,2,1,1
+8,entrenamiento,41,1.4,9,1,1
+9,entrenamiento,22,3.2,9,1,1
+10,entrenamiento,31,5.3,5,1,1
+11,entrenamiento,14,13.5,3,1,1
+12,entrenamiento,37,12.4,5,1,1
+13,entrenamiento,88,12.9,7,0,0
+14,entrenamiento,82,4.1,6,0,0
+15,prueba,33,10.6,8,0,0
+16,prueba,23,5.2,3,1,1
+17,prueba,42,4.9,9,1,1
+18,prueba,27,4.6,1,1,1
+19,prueba,31,5.3,7,1,1
+20,prueba,50,4.5,10,0,0

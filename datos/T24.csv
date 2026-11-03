@@ -1,0 +1,21 @@
+caso,conjunto,Temperatura máxima pronosticada (°C),"Día hábil (0 = no, 1 = sí)",Demanda del día anterior (% de la capacidad),resultado_real
+1,entrenamiento,36,1,55,0
+2,entrenamiento,41,0,98,1
+3,entrenamiento,33,1,79,0
+4,entrenamiento,27,1,69,0
+5,entrenamiento,29,0,73,0
+6,entrenamiento,26,1,79,0
+7,entrenamiento,27,1,64,0
+8,entrenamiento,40,0,60,0
+9,entrenamiento,29,1,102,0
+10,entrenamiento,25,0,78,0
+11,entrenamiento,36,1,83,1
+12,entrenamiento,42,1,86,1
+13,entrenamiento,30,1,80,1
+14,entrenamiento,41,0,99,1
+15,prueba,36,1,78,1
+16,prueba,36,1,70,1
+17,prueba,27,1,50,0
+18,prueba,34,1,84,1
+19,prueba,31,1,62,0
+20,prueba,32,0,61,0

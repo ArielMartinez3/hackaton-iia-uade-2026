@@ -1,0 +1,21 @@
+caso,conjunto,Lista de deseos antes del lanzamiento (miles),Precio (USD),"Tuvo demo pública (0 = no, 1 = sí)",Reseñas en la primera semana (cantidad),resultado_real
+1,entrenamiento,210,36,0,518,0
+2,entrenamiento,97,17,0,541,0
+3,entrenamiento,224,17,0,6250,1
+4,entrenamiento,85,24,1,602,0
+5,entrenamiento,258,26,1,3912,1
+6,entrenamiento,134,5,1,4093,1
+7,entrenamiento,260,34,0,96,0
+8,entrenamiento,228,15,0,619,0
+9,entrenamiento,283,22,1,4719,1
+10,entrenamiento,87,28,0,358,0
+11,entrenamiento,219,12,0,4889,1
+12,entrenamiento,42,13,1,737,0
+13,entrenamiento,186,34,1,5601,1
+14,entrenamiento,32,39,0,456,0
+15,prueba,161,5,0,467,0
+16,prueba,242,38,0,891,0
+17,prueba,3,35,1,514,0
+18,prueba,158,16,1,7407,1
+19,prueba,169,37,1,6271,1
+20,prueba,253,17,0,341,0

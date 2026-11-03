@@ -1,0 +1,21 @@
+caso,conjunto,Entregas fallidas previas (del cliente),"Respondió el aviso por WhatsApp (0 = no, 1 = sí)","Franja horaria (0 = mañana, 1 = tarde)",resultado_real
+1,entrenamiento,4,0,0,1
+2,entrenamiento,5,1,0,0
+3,entrenamiento,1,0,0,0
+4,entrenamiento,2,1,1,0
+5,entrenamiento,2,0,0,0
+6,entrenamiento,5,0,0,1
+7,entrenamiento,0,0,0,0
+8,entrenamiento,4,0,1,0
+9,entrenamiento,5,1,1,0
+10,entrenamiento,2,1,0,0
+11,entrenamiento,4,1,0,0
+12,entrenamiento,4,1,1,0
+13,entrenamiento,3,1,1,0
+14,entrenamiento,6,1,1,0
+15,prueba,3,0,1,0
+16,prueba,2,1,1,0
+17,prueba,2,1,0,0
+18,prueba,3,1,0,0
+19,prueba,4,0,0,1
+20,prueba,3,0,1,0

@@ -1,0 +1,21 @@
+caso,conjunto,Seguidores del artista (miles),Playlists editoriales (en las que entra la primera semana),"Colaboración con otro artista (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,1208,6,1,0
+2,entrenamiento,2367,6,0,0
+3,entrenamiento,2205,12,1,1
+4,entrenamiento,345,2,1,0
+5,entrenamiento,253,0,1,0
+6,entrenamiento,916,10,1,0
+7,entrenamiento,483,3,0,0
+8,entrenamiento,2696,10,0,0
+9,entrenamiento,728,12,0,0
+10,entrenamiento,1773,12,1,1
+11,entrenamiento,461,12,1,0
+12,entrenamiento,2126,3,1,0
+13,entrenamiento,1431,9,0,0
+14,entrenamiento,2926,9,0,0
+15,prueba,933,9,0,0
+16,prueba,860,12,0,0
+17,prueba,1445,6,0,0
+18,prueba,1939,2,1,0
+19,prueba,2769,11,0,1
+20,prueba,2965,1,1,0

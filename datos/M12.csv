@@ -1,0 +1,21 @@
+caso,conjunto,Escalas (cantidad de transbordos),Días de holgura (entre fecha prometida y estimada),Congestión portuaria (índice 0 a 10),"Despachado a tiempo del depósito (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,1,9,4,0,0
+2,entrenamiento,2,8,2,1,0
+3,entrenamiento,3,9,8,1,0
+4,entrenamiento,2,6,9,0,0
+5,entrenamiento,4,7,5,0,1
+6,entrenamiento,4,10,8,1,1
+7,entrenamiento,1,3,2,1,0
+8,entrenamiento,5,4,1,1,1
+9,entrenamiento,1,2,9,1,1
+10,entrenamiento,3,5,7,1,0
+11,entrenamiento,3,6,9,1,1
+12,entrenamiento,3,1,8,1,1
+13,entrenamiento,3,2,6,0,1
+14,entrenamiento,2,5,5,0,0
+15,prueba,3,3,5,0,1
+16,prueba,3,9,6,1,0
+17,prueba,4,2,1,0,1
+18,prueba,2,10,1,1,0
+19,prueba,2,6,3,1,0
+20,prueba,5,1,9,1,1

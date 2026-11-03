@@ -1,0 +1,21 @@
+caso,conjunto,Sesiones (en la semana),Días trabado (sin avanzar de nivel),Amigos activos (en su lista),Minutos jugados (en la semana),resultado_real
+1,entrenamiento,2,7,1,258,1
+2,entrenamiento,7,9,2,686,0
+3,entrenamiento,6,4,7,767,0
+4,entrenamiento,10,0,2,548,0
+5,entrenamiento,1,14,0,9,1
+6,entrenamiento,13,2,3,247,0
+7,entrenamiento,5,9,2,735,1
+8,entrenamiento,1,10,4,0,1
+9,entrenamiento,6,6,6,538,0
+10,entrenamiento,9,11,4,676,0
+11,entrenamiento,7,11,5,727,1
+12,entrenamiento,7,3,3,433,0
+13,entrenamiento,2,7,7,209,1
+14,entrenamiento,12,8,3,295,0
+15,prueba,5,13,6,419,1
+16,prueba,13,12,7,240,0
+17,prueba,4,1,8,900,0
+18,prueba,11,2,6,403,0
+19,prueba,6,13,3,125,1
+20,prueba,0,5,9,217,0

@@ -1,0 +1,21 @@
+caso,conjunto,Asistencia (% del cuatrimestre),Materias aprobadas (de 5),Horas de trabajo (por semana),"Pidió constancia de baja (0 = no, 1 = sí)",resultado_real
+1,entrenamiento,88,0,16,0,0
+2,entrenamiento,48,3,36,1,1
+3,entrenamiento,70,3,27,1,1
+4,entrenamiento,46,0,2,1,1
+5,entrenamiento,99,1,25,0,0
+6,entrenamiento,83,4,20,0,0
+7,entrenamiento,85,4,42,0,0
+8,entrenamiento,100,5,42,0,0
+9,entrenamiento,63,5,9,0,0
+10,entrenamiento,56,1,16,1,1
+11,entrenamiento,70,0,4,1,1
+12,entrenamiento,68,3,25,0,0
+13,entrenamiento,37,3,27,1,1
+14,entrenamiento,37,3,29,1,1
+15,prueba,76,2,24,0,0
+16,prueba,94,4,9,0,0
+17,prueba,47,3,24,1,1
+18,prueba,37,4,2,0,0
+19,prueba,72,1,10,1,1
+20,prueba,86,2,15,0,0

@@ -1,0 +1,21 @@
+caso,conjunto,Días de cobertura (con el stock actual),Variabilidad de la demanda (coeficiente de variación),Demora del proveedor (días),resultado_real
+1,entrenamiento,24,0.94,8,0
+2,entrenamiento,13,0.21,18,0
+3,entrenamiento,10,0.2,17,1
+4,entrenamiento,14,0.84,19,1
+5,entrenamiento,1,0.27,15,1
+6,entrenamiento,9,0.58,7,0
+7,entrenamiento,3,0.82,13,1
+8,entrenamiento,21,0.42,5,0
+9,entrenamiento,26,0.3,12,0
+10,entrenamiento,8,0.32,15,0
+11,entrenamiento,3,0.25,18,1
+12,entrenamiento,18,0.35,15,0
+13,entrenamiento,14,0.35,9,0
+14,entrenamiento,22,0.29,6,0
+15,prueba,11,0.58,13,1
+16,prueba,3,0.88,13,1
+17,prueba,1,0.84,12,1
+18,prueba,2,0.1,16,0
+19,prueba,22,0.81,6,0
+20,prueba,2,0.54,19,1

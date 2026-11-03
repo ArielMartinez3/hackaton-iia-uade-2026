@@ -1,0 +1,21 @@
+caso,conjunto,Distancia del tiro (m),Defensor más cercano (m),Efectividad del tirador (% en triples en la temporada),resultado_real
+1,entrenamiento,7.38,1.7,32,0
+2,entrenamiento,7.0,0.9,29,0
+3,entrenamiento,7.24,2.4,31,0
+4,entrenamiento,9.47,1.3,37,0
+5,entrenamiento,7.64,1.9,26,0
+6,entrenamiento,8.69,0.9,33,0
+7,entrenamiento,6.95,1.9,27,0
+8,entrenamiento,7.64,2.9,26,0
+9,entrenamiento,8.51,0.8,30,0
+10,entrenamiento,8.06,2.9,43,1
+11,entrenamiento,7.72,2.3,43,1
+12,entrenamiento,9.45,0.5,33,0
+13,entrenamiento,7.13,0.7,41,0
+14,entrenamiento,9.14,1.7,42,0
+15,prueba,8.87,2.9,28,0
+16,prueba,8.97,0.9,35,0
+17,prueba,6.94,0.6,39,0
+18,prueba,6.76,1.7,44,1
+19,prueba,7.19,2.6,28,0
+20,prueba,7.05,1.1,33,0
