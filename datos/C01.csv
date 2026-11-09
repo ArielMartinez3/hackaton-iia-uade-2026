@@ -1,0 +1,21 @@
+caso,conjunto,Horas de uso desde el último service (cientos de h),Temperatura del rodamiento (°C),Vibración (mm/s),Repuestos pedidos en los 30 días siguientes (1 = sí),resultado_real
+1,entrenamiento,4.1,58,2.3,0,0
+2,entrenamiento,9.5,66,3.9,0,0
+3,entrenamiento,11.8,84,6.8,1,1
+4,entrenamiento,3.2,52,1.6,0,0
+5,entrenamiento,7.4,71,5.2,0,0
+6,entrenamiento,12.6,61,2.9,0,0
+7,entrenamiento,8.9,88,7.4,1,1
+8,entrenamiento,5.6,63,3.1,0,0
+9,entrenamiento,10.2,74,4.4,0,0
+10,entrenamiento,6.3,91,8.1,1,1
+11,entrenamiento,2.7,55,2.0,0,0
+12,entrenamiento,6.8,79,5.9,0,0
+13,entrenamiento,13.4,77,5.6,1,1
+14,entrenamiento,4.8,69,4.0,0,0
+15,prueba,9.1,70,4.6,0,0
+16,prueba,10.7,86,7.0,1,1
+17,prueba,3.9,60,2.5,0,0
+18,prueba,7.7,81,6.4,0,0
+19,prueba,12.1,76,6.3,1,1
+20,prueba,5.1,57,2.2,0,0
