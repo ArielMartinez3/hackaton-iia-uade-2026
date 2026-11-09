@@ -3,7 +3,7 @@
 **Integrantes:** Ariel Martinez
 **IA declarada:** Gemini
 **Pista:** Neurona artificial
-**Publicación en LinkedIn:** <pendiente de publicación>
+**Publicación en LinkedIn:** https://lnkd.in/p/dtavpcGA
 
 ---
 
