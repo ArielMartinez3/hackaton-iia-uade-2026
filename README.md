@@ -23,6 +23,8 @@ Lo que de verdad importa en el problema es que ninguna bomba se rompa en plena c
 La métrica técnica para medirlo es la Sensibilidad (Recall = VP / (VP + FN)). 
 No son lo mismo: la métrica es una cuenta estadística sobre los datos, mientras que el objetivo es la continuidad operativa y económica del campo. Si nos fijáramos solo en la Exactitud, un modelo ingenuo que diga siempre que NO paramos la bomba tendría un 71.4% de exactitud en entrenamiento, pero una Sensibilidad del 0% (se romperían todas las bombas averiadas). Por eso, el sistema se ajusta para priorizar la Sensibilidad por encima de la Exactitud.
 
+**El sistema emite una orden, no repara la bomba.** La salida algorítmica es una alerta preventiva; el objetivo real es la continuidad del riego. Entre la predicción y el resultado está la cuadrilla técnica: el sistema solo aporta al objetivo de negocio si el taller cuenta con stock de repuestos y la intervención se realiza eficazmente dentro de la ventana de medio día. La Sensibilidad del 100% mide el techo de cobertura del modelo, no la ausencia de fallas mecánicas en el campo.
+
 ---
 
 ## 2. El sistema
@@ -35,9 +37,9 @@ Si la entrada neta n es mayor o igual a 0, el sistema responde SÍ (parar para s
 
 **Variables que usa y por qué.** 
 Usamos tres variables disponibles al momento de la revisión:
-* Horas de uso desde el último service: mide el desgaste acumulado en el tiempo.
-* Temperatura del rodamiento: indica fricción o problemas de lubricación.
-* Vibración: es la variable con mayor peso (w=10) porque es el síntoma físico directo de desbalance, desalineación o juego interno en el motor.
+- Horas de uso desde el último service: mide el desgaste acumulado en el tiempo.
+- Temperatura del rodamiento: indica fricción o problemas de lubricación.
+- Vibración: es la variable con mayor peso (w=10) porque es el síntoma físico directo de desbalance, desalineación o juego interno en el motor.
 
 Descartamos por completo la columna «Repuestos pedidos en los 30 días siguientes». La decisión del jefe de mantenimiento se toma el día 1 del mes; lo que pase durante los 30 días posteriores es información del futuro que todavía no ocurrió. Usar ese dato para decidir sería fuga de datos (Target Leakage), lo cual falsearía el sistema e invalidaría su aplicación en una situación real.
 
@@ -79,7 +81,9 @@ Para resolver un caso nuevo:
 | Especificidad | 100.0% (10/10) | 75.0% (3/4) |
 
 **Entrenamiento contra prueba.** 
-En entrenamiento el modelo acertó el 100% de los casos. En prueba la exactitud bajó a 83.3% porque hubo un falso positivo (Caso 18: Horas 7.7, Temp 81, Vib 6.4, n = +5.4). No se trata de sobreajuste sino de un comportamiento prudente del modelo: la Sensibilidad se mantuvo en 100% (cero fallas omitidas). El caso 18 tenía temperatura y vibración bastante elevadas, por lo que ante la duda el sistema prefirió mandar la bomba a service preventivo antes que arriesgar una rotura.
+En entrenamiento el modelo acertó el 100% de los casos. En prueba la exactitud bajó a 83.3% por un único falso positivo (Caso 18: Horas 7.7, Temp 81, Vib 6.4, n = +5.4). No es sobreajuste, sino una generalización deliberadamente prudente: la Sensibilidad se mantuvo en 100% (cero fallas omitidas). El caso 18 presentaba valores térmicos y de vibración elevados; ante la duda, el sistema prefirió indicar service preventivo antes que arriesgar una rotura.
+
+**Límites de la muestra de prueba.** Dado que el conjunto de prueba consta de solo 6 casos, cada bomba representa 16.7 puntos porcentuales. Un único desvío produce una caída porcentual visible (del 100% al 83.3%), lo que evidencia que la muestra es pequeña para conclusiones definitivas de exactitud general, pero suficiente para validar la consistencia en Sensibilidad: 2 de 2 fallas reales detectadas.
 
 ---
 
@@ -96,17 +100,19 @@ Para evitar ese error, ajustamos el sesgo (b = -155.0) y le dimos peso fuerte a 
 
 **Línea base trivial.** 
 Como la mayoría de las bombas no fallan (10 de 14 en entrenamiento y 4 de 6 en prueba), un clasificador ciego que diga siempre NO obtendría:
-* Exactitud en entrenamiento: 10/14 = 71.4%
-* Exactitud en prueba: 4/6 = 66.7%
-* Sensibilidad: 0.0% (dejaría romper todas las bombas averiadas)
+- Exactitud en entrenamiento: 10/14 = 71.4%
+- Exactitud en prueba: 4/6 = 66.7%
+- Sensibilidad: 0.0% (dejaría romper todas las bombas averiadas)
 
 Nuestra neurona supera a la línea base en exactitud (100% vs 71.4% en entrenamiento, y 83.3% vs 66.7% en prueba). Sin embargo, la ventaja real está en que alcanza 100% de Sensibilidad frente al 0% de la línea base, cumpliendo el objetivo de detectar todas las roturas.
+
+**El extremo opuesto: responder siempre SÍ.** Un clasificador que responda siempre SÍ lograría también 100% de Sensibilidad, pero con Especificidad 0%: ordenaría detener las 20 bombas, paralizando por completo el esquema de riego del campo. El valor de nuestra neurona reside en sostener el 100% de Sensibilidad interviniendo únicamente 4 de 14 bombas en entrenamiento y 3 de 6 en prueba (75% de Especificidad), maximizando la protección con una disrupción mínima del riego.
 
 | Checklist (Clase 6) | Respuesta |
 |---|---|
 | ¿Qué datos? | 20 casos de telemetría de bombas provistos en la ficha C01 (14 de entrenamiento y 6 de prueba). Se descartó la columna de repuestos por ser Target Leakage. |
 | ¿Qué métrica? | Sensibilidad como métrica central para evitar roturas, acompañada por matriz de confusión completa y Exactitud. |
-| ¿Comparado contra qué? | Contra un clasificador trivial que predice siempre la clase mayoritaria (NO parar). |
+| ¿Comparado contra qué? | Contra el clasificador trivial «siempre NO» y el extremo de sobrealerta «siempre SÍ». |
 | ¿Quién lo midió? | El grupo mediante código en Google Colab, respetando la partición de prueba a ciegas sin tocar los pesos. |
 
 ---
@@ -115,11 +121,17 @@ Nuestra neurona supera a la línea base en exactitud (100% vs 71.4% en entrenami
 
 Datos -> Modelo -> Decisión -> Consecuencia
 
-* Datos: sensores de vibración y temperatura instalados en los pozos de riego.
-* Riesgo concreto en los datos: un acelerómetro flojo o mal calibrado registra 2.0 mm/s de vibración cuando en realidad la bomba está vibrando a 7.5 mm/s por desgaste interno.
-* Modelo: la neurona recibe un valor bajo de vibración y calcula una entrada neta negativa (n < 0).
-* Decisión: el sistema predice NO y el encargado deja la bomba funcionando sin mantenimiento.
-* Consecuencia: la bomba colapsa en medio de una semana calurosa de riego intensivo. El pivote queda fuera de servicio por falta de repuestos inmediatos, el cultivo sufre estrés hídrico y se generan sobrecostos por reparaciones de urgencia.
+- Datos: sensores de vibración y temperatura instalados en los pozos de riego.
+- Riesgo concreto en los datos: un acelerómetro flojo o mal calibrado registra 2.0 mm/s de vibración cuando en realidad la bomba está vibrando a 7.5 mm/s por desgaste interno.
+- Modelo: la neurona recibe un valor bajo de vibración y calcula una entrada neta negativa (n < 0).
+- Decisión: el sistema predice NO y el encargado deja la bomba funcionando sin mantenimiento.
+- Consecuencia: la bomba colapsa en medio de una semana calurosa de riego intensivo. El pivote queda fuera de servicio por falta de repuestos inmediatos, el cultivo sufre estrés hídrico y se generan sobrecostos por reparaciones de urgencia.
+
+**Riesgo sociotécnico: Fatiga de alertas.** Al calibrar el modelo priorizando la Sensibilidad, toleramos falsos positivos marginales. Si el personal operativo experimenta detenciones donde el rodamiento no presentaba anomalías graves, existe el riesgo de que comiencen a desestimar las recomendaciones del sistema («la máquina exagera»), apagando el software o postergando un service preventivo crítico, desembocando en la rotura que se buscaba evitar.
+
+**Condiciones de uso obligatorias:**
+1. Las paradas sugeridas deben coordinarse en ventanas de bajo requerimiento hídrico (horarios nocturnos) para atenuar el costo operativo de un posible falso positivo.
+2. La alerta técnica no reemplaza la inspección del mecánico: constituye una recomendación de revisión prioritaria antes de desacoplar definitivamente el pivote.
 
 ---
 
@@ -143,6 +155,7 @@ Datos -> Modelo -> Decisión -> Consecuencia
 | 1 | `Encabezado y Sección 1: Formulación PEAS` | Formulación de la pregunta binaria, desglose de la tabla PEAS y distinción entre objetivo de campo y métrica técnica. | Establecer el marco de decisión y fijar la Sensibilidad como norte antes de construir el modelo. |
 | 2 | `Sección 2: Arquitectura de neurona y descarte de target leakage` | Definición de pesos w=(2, 1, 10), sesgo b=-155, justificación del descarte de repuestos y dos casos inventados (A y B). | Documentar el modelo matemático explicable y blindar el sistema contra fuga de datos del futuro. |
 | 3 | `Sección 3: Matrices de confusión y métricas completas` | Cuentas fila por fila de entrenamiento y prueba, matrices 2x2 verificadas y tabla comparativa de métricas. | Validar que el sistema generaliza con 100% de Sensibilidad y 83.3% de Exactitud en casos no vistos. |
-| 4 | `Secciones 4, 5 y 6: Análisis de error, línea base y riesgo` | Justificación del costo del Falso Negativo, contraste contra la línea base trivial de clase mayoritaria y flujo de riesgo técnico. | Demostrar que el modelo aporta valor real sobre el clasificador ciego y mapear riesgos sociotécnicos. |
+| 4 | `Secciones 4, 5 y 6: Análisis de error, línea base y riesgo` | Justificación del costo del Falso Negativo, contraste contra la línea base trivial de clase mayoritaria y flujo de riesgo técnico. | Demostrar que el modelo aporta valor real sobre el clasificador ciego y previene roturas caras. |
 | 5 | `Sección 7: Bitácora de IA y registro de versiones` | Detalle exhaustivo de interacción con la IA (6 iteraciones) y registro de commits del repositorio. | Transparentar la autoría, la auditoría metodológica y cumplir con el Criterio G de la rúbrica. |
-| 6 | `Cierre: Link a publicación en LinkedIn` | Incorporación del enlace a la publicación pública obligatoria en LinkedIn en el encabezado. | Completar la totalidad de los requisitos de entrega estipulados por la cátedra. |
+| 6 | `Refinamiento: Fatiga de alertas, límites muestrales y baseline siempre SÍ` | Incorporación del límite muestral (16.7%/caso), baseline «siempre SÍ», fatiga de alertas y condiciones de uso. | Robustecer el análisis sociotécnico y desarmar la trampa de maximizar sensibilidad a costa de sobrealertas. |
+| 7 | `Cierre: Link a publicación en LinkedIn` | Incorporación del enlace a la publicación pública obligatoria en LinkedIn en el encabezado. | Completar la totalidad de los requisitos de entrega estipulados por la cátedra. |
