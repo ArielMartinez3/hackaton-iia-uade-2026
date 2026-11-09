@@ -43,7 +43,7 @@ Descartamos por completo la columna «Repuestos pedidos en los 30 días siguient
 
 **Cómo se corre en vivo.** 
 Para resolver un caso nuevo:
-1. En Google Colab: abrir el notebook https://colab.research.google.com/drive/1sPhevznx9r7qIC8cK8FuAbeJ7Ezlt5aY?usp=sharing , ir a la celda 8 y ejecutar la función `resolver_caso_en_vivo(horas, temp, vib)`.
+1. En Google Colab: abrir el notebook https://colab.research.google.com/drive/1sPhevznx9r7qIC8cK8FuAbeJ7Ezlt5aY?usp=sharing , ir a la última celda interactiva y ejecutar la función `resolver_caso_en_vivo_interactivo()`.
 2. A mano: calcular la fórmula n = 2.0*(horas) + 1.0*(temperatura) + 10.0*(vibración) - 155.0. Si el resultado da 0 o positivo, la salida es SÍ. Si da negativo, la salida es NO.
 
 **Dos casos de ejemplo.**
@@ -120,3 +120,29 @@ Datos -> Modelo -> Decisión -> Consecuencia
 * Modelo: la neurona recibe un valor bajo de vibración y calcula una entrada neta negativa (n < 0).
 * Decisión: el sistema predice NO y el encargado deja la bomba funcionando sin mantenimiento.
 * Consecuencia: la bomba colapsa en medio de una semana calurosa de riego intensivo. El pivote queda fuera de servicio por falta de repuestos inmediatos, el cultivo sufre estrés hídrico y se generan sobrecostos por reparaciones de urgencia.
+
+---
+
+## 7. Bitácora
+
+**Uso de la IA**
+
+| # | Qué le pedimos a la IA | Qué aceptamos | Qué rechazamos y por qué |
+|:---:|---|---|---|
+| 1 | Análisis exploratorio de las variables provistas en el CSV de la ficha C01 y estructura del PEAS. | La definición del entorno agrícola, los actuadores mecánicos y la formulación de la pregunta binaria para la decisión mensual. | Rechazamos la sugerencia inicial de la IA de correlacionar todas las columnas. Detectamos que la variable «Repuestos pedidos en los 30 días siguientes» ocurre después de la inspección y constituye Target Leakage estricto. |
+| 2 | Evaluación comparativa entre las 3 pistas (Reglas, Agente racional y Neurona) para definir la arquitectura. | La elección de la Pista 1 (Neurona/Perceptrón lineal de 3 entradas) por su transparencia analítica y facilidad de resolución manual en vivo. | Rechazamos la Pista 2 (Reglas) por volverse rígida ante casos límite, y la Pista 3 (Agente) porque requería definir matrices de decisión complejas sin datos suficientes en la ficha. |
+| 3 | Calibración de pesos y sesgo para los 14 casos de entrenamiento. | Los pesos relativos w = (2.0 para horas, 1.0 para temperatura y 10.0 para vibración) por reflejar la criticidad física del desbalance mecánico. | Rechazamos una propuesta inicial con sesgo neutro (b = -160) porque priorizaba la exactitud simétrica y generaba riesgo de falsos negativos en casos límite. Exigimos ajustar b = -155 para priorizar 100% de Sensibilidad. |
+| 4 | Desarrollo del script en Python para Google Colab y cálculo automatizado de matrices de confusión. | La función de partición fija de datos, las fórmulas matemáticas de las 4 métricas y la verificación de que las cuentas cerraran con los 20 casos de la ficha. | Rechazamos el uso de librerías de caja negra como scikit-learn (LogisticRegression). Exigimos programar el cálculo de la entrada neta y la matriz de confusión con funciones nativas de Python/Pandas para transparentar la aritmética. |
+| 5 | Manejo de errores de carga en el notebook y estandarización de datos. | El bloque de código para normalizar los nombres de columnas del CSV y el casteo de valores con comas decimales a float. | Rechazamos salidas visuales recargadas con caracteres innecesarios. Pedimos simplificar los prints de consola para que la lectura de resultados sea limpia y directa. |
+| 6 | Diseño del método de prueba en vivo para la defensa oral obligatoria. | La creación de una función interactiva con captura de datos por teclado (`input`) para ingresar horas, temperatura y vibración en tiempo real. | Rechazamos dejar una celda estática que requiriera modificar el código fuente frente al profesor; el modo interactivo permite ingresar los valores que dicte el docente y veredicto inmediato. |
+
+**Registro de versiones**
+
+| Versión | Commit | Qué cambió | Por qué |
+|:---:|---|---|---|
+| 1 | `Encabezado y Sección 1: Formulación PEAS` | Formulación de la pregunta binaria, desglose de la tabla PEAS y distinción entre objetivo de campo y métrica técnica. | Establecer el marco de decisión y fijar la Sensibilidad como norte antes de construir el modelo. |
+| 2 | `Sección 2: Arquitectura de neurona y descarte de target leakage` | Definición de pesos w=(2, 1, 10), sesgo b=-155, justificación del descarte de repuestos y dos casos inventados (A y B). | Documentar el modelo matemático explicable y blindar el sistema contra fuga de datos del futuro. |
+| 3 | `Sección 3: Matrices de confusión y métricas completas` | Cuentas fila por fila de entrenamiento y prueba, matrices 2x2 verificadas y tabla comparativa de métricas. | Validar que el sistema generaliza con 100% de Sensibilidad y 83.3% de Exactitud en casos no vistos. |
+| 4 | `Secciones 4, 5 y 6: Análisis de error, línea base y riesgo` | Justificación del costo del Falso Negativo, contraste contra la línea base trivial de clase mayoritaria y flujo de riesgo técnico. | Demostrar que el modelo aporta valor real sobre el clasificador ciego y mapear riesgos sociotécnicos. |
+| 5 | `Sección 7: Bitácora de IA y registro de versiones` | Detalle exhaustivo de interacción con la IA (6 iteraciones) y registro de commits del repositorio. | Transparentar la autoría, la auditoría metodológica y cumplir con el Criterio G de la rúbrica. |
+| 6 | `Cierre: Link a publicación en LinkedIn` | Incorporación del enlace a la publicación pública obligatoria en LinkedIn en el encabezado. | Completar la totalidad de los requisitos de entrega estipulados por la cátedra. |
