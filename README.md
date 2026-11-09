@@ -43,7 +43,7 @@ Descartamos por completo la columna «Repuestos pedidos en los 30 días siguient
 
 **Cómo se corre en vivo.** 
 Para resolver un caso nuevo:
-1. En Google Colab: abrir el notebook https://colab.research.google.com/drive/1YqulaTRLl97Imyau1eRLstemMBZiIskB?usp=sharing , ir a la celda 8 y ejecutar la función `resolver_caso_en_vivo(horas, temp, vib)`.
+1. En Google Colab: abrir el notebook https://colab.research.google.com/drive/1sPhevznx9r7qIC8cK8FuAbeJ7Ezlt5aY?usp=sharing , ir a la celda 8 y ejecutar la función `resolver_caso_en_vivo(horas, temp, vib)`.
 2. A mano: calcular la fórmula n = 2.0*(horas) + 1.0*(temperatura) + 10.0*(vibración) - 155.0. Si el resultado da 0 o positivo, la salida es SÍ. Si da negativo, la salida es NO.
 
 **Dos casos de ejemplo.**
@@ -80,3 +80,43 @@ Para resolver un caso nuevo:
 
 **Entrenamiento contra prueba.** 
 En entrenamiento el modelo acertó el 100% de los casos. En prueba la exactitud bajó a 83.3% porque hubo un falso positivo (Caso 18: Horas 7.7, Temp 81, Vib 6.4, n = +5.4). No se trata de sobreajuste sino de un comportamiento prudente del modelo: la Sensibilidad se mantuvo en 100% (cero fallas omitidas). El caso 18 tenía temperatura y vibración bastante elevadas, por lo que ante la duda el sistema prefirió mandar la bomba a service preventivo antes que arriesgar una rotura.
+
+---
+
+## 4. El error más caro
+
+En este campo el falso negativo es mucho peor que el falso positivo. 
+Un falso positivo significa parar una bomba que no iba a fallar: el costo es medio día de riego perdido y pagar un service que no hacía falta. En cambio, un falso negativo significa no parar una bomba que termina rompiéndose en plena campaña: el pivote queda parado varios días en el momento más importante del cultivo y la reparación de urgencia sale varias veces más cara que el service preventivo.
+
+Para evitar ese error, ajustamos el sesgo (b = -155.0) y le dimos peso fuerte a la vibración y a la temperatura. De esta forma, ante valores que se acercan a zonas de riesgo, la neurona da positivo y prioriza no dejar pasar ninguna falla (100% de Sensibilidad).
+
+---
+
+## 5. ¿Comparado contra qué?
+
+**Línea base trivial.** 
+Como la mayoría de las bombas no fallan (10 de 14 en entrenamiento y 4 de 6 en prueba), un clasificador ciego que diga siempre NO obtendría:
+* Exactitud en entrenamiento: 10/14 = 71.4%
+* Exactitud en prueba: 4/6 = 66.7%
+* Sensibilidad: 0.0% (dejaría romper todas las bombas averiadas)
+
+Nuestra neurona supera a la línea base en exactitud (100% vs 71.4% en entrenamiento, y 83.3% vs 66.7% en prueba). Sin embargo, la ventaja real está en que alcanza 100% de Sensibilidad frente al 0% de la línea base, cumpliendo el objetivo de detectar todas las roturas.
+
+| Checklist (Clase 6) | Respuesta |
+|---|---|
+| ¿Qué datos? | 20 casos de telemetría de bombas provistos en la ficha C01 (14 de entrenamiento y 6 de prueba). Se descartó la columna de repuestos por ser Target Leakage. |
+| ¿Qué métrica? | Sensibilidad como métrica central para evitar roturas, acompañada por matriz de confusión completa y Exactitud. |
+| ¿Comparado contra qué? | Contra un clasificador trivial que predice siempre la clase mayoritaria (NO parar). |
+| ¿Quién lo midió? | El grupo mediante código en Google Colab, respetando la partición de prueba a ciegas sin tocar los pesos. |
+
+---
+
+## 6. Riesgo: el camino completo
+
+Datos -> Modelo -> Decisión -> Consecuencia
+
+* Datos: sensores de vibración y temperatura instalados en los pozos de riego.
+* Riesgo concreto en los datos: un acelerómetro flojo o mal calibrado registra 2.0 mm/s de vibración cuando en realidad la bomba está vibrando a 7.5 mm/s por desgaste interno.
+* Modelo: la neurona recibe un valor bajo de vibración y calcula una entrada neta negativa (n < 0).
+* Decisión: el sistema predice NO y el encargado deja la bomba funcionando sin mantenimiento.
+* Consecuencia: la bomba colapsa en medio de una semana calurosa de riego intensivo. El pivote queda fuera de servicio por falta de repuestos inmediatos, el cultivo sufre estrés hídrico y se generan sobrecostos por reparaciones de urgencia.
