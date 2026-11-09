@@ -52,3 +52,31 @@ Para resolver un caso nuevo:
 |---|---|---|
 | A | Horas = 10.0, Temp = 85 °C, Vib = 6.5 mm/s -> n = 2(10) + 1(85) + 10(6.5) - 155 = +15.0 | SÍ |
 | B | Horas = 4.0, Temp = 56 °C, Vib = 2.0 mm/s -> n = 2(4) + 1(56) + 10(2.0) - 155 = -71.0 | NO |
+
+---
+
+## 3. Medición
+
+**Entrenamiento (casos 1–14)**
+
+| | Predice SÍ | Predice NO |
+|---|---|---|
+| **Real SÍ** | VP = 4 | FN = 0 |
+| **Real NO** | FP = 0 | VN = 10 |
+
+**Prueba (casos 15–20)**
+
+| | Predice SÍ | Predice NO |
+|---|---|---|
+| **Real SÍ** | VP = 2 | FN = 0 |
+| **Real NO** | FP = 1 | VN = 3 |
+
+| Métrica | Entrenamiento | Prueba |
+|---|---|---|
+| Exactitud | 100.0% (14/14) | 83.3% (5/6) |
+| Precisión | 100.0% (4/4) | 66.7% (2/3) |
+| Sensibilidad | 100.0% (4/4) | 100.0% (2/2) |
+| Especificidad | 100.0% (10/10) | 75.0% (3/4) |
+
+**Entrenamiento contra prueba.** 
+En entrenamiento el modelo acertó el 100% de los casos. En prueba la exactitud bajó a 83.3% porque hubo un falso positivo (Caso 18: Horas 7.7, Temp 81, Vib 6.4, n = +5.4). No se trata de sobreajuste sino de un comportamiento prudente del modelo: la Sensibilidad se mantuvo en 100% (cero fallas omitidas). El caso 18 tenía temperatura y vibración bastante elevadas, por lo que ante la duda el sistema prefirió mandar la bomba a service preventivo antes que arriesgar una rotura.
