@@ -1,96 +1,24 @@
-# <Código> · <Título de su problemática>
+# C01 · ¿Paramos esta bomba de riego para mantenimiento?
 
-> **Hackatón IIA · UADE · 3.4.257.** Este README es la plantilla del grupo. En su fork, reemplacen todo lo que está entre `< >` y borren esta nota. Las bases están en `BASES.md` y su ficha en `problematicas/`.
-
-**Integrantes:** <nombre y apellido> · <nombre y apellido>
-**IA declarada:** <la del grupo desde la Clase 1>
-**Pista:** <Neurona / Reglas / Agente>
-**Publicación en LinkedIn:** <link>
+**Integrantes:** Ariel Martinez
+**IA declarada:** Gemini
+**Pista:** Neurona artificial
+**Publicación en LinkedIn:** <pendiente de publicación>
 
 ---
 
 ## 1. Formulación y PEAS
 
-**La pregunta.** <Para cada caso, ¿…? SÍ significa: …>
+**La pregunta.** Para cada bomba revisada a principio de mes, ¿la bomba de riego fallará en los 30 días siguientes a la revisión? SÍ significa que la bomba va a romperse dentro de ese mes y se debe parar medio día para service preventivo. NO significa que la bomba puede seguir operando con normalidad hasta la próxima revisión.
 
 | PEAS | Su sistema |
 |---|---|
-| Medida de rendimiento | <cómo se sabe si decidió bien> |
-| Entorno | <dónde y con qué decide> |
-| Actuadores | <qué hace con la decisión> |
-| Sensores | <qué datos recibe> |
+| Medida de rendimiento | Maximizar el tiempo de riego disponible en los momentos críticos de la campaña, evitar roturas imprevistas que paren los pivotes por días y minimizar los costos de reparaciones de urgencia y pérdidas de cultivo. |
+| Entorno | Campo con sistema de riego por pivote central abastecido por bombas de pozo profundo, sometidas a desgaste mecánico y demanda hídrica estacional. |
+| Actuadores | Orden de trabajo para frenar la bomba medio día por service preventivo, cuadrilla de mantenimiento y reemplazo de rodamientos o piezas desgastadas. |
+| Sensores | Datos de la inspección mensual: horas de uso desde el último service (en cientos de horas), temperatura del rodamiento (°C) y vibración mecánica (mm/s). |
 
-**Objetivo y métrica.** <Qué es lo que de verdad importa en su problema y con qué métrica lo van a medir. ¿Son lo mismo?>
-
-## 2. El sistema
-
-**Cómo decide.** <Neurona: pesos y sesgo. Reglas: la lista de reglas si‑entonces. Agente: la regla con la que elige la acción.>
-
-**Variables que usa y por qué.** <Cuáles usa, cuáles descarta y por qué.>
-
-**Cómo se corre en vivo.** <Pasos concretos para resolver un caso nuevo: link al Colab, a la planilla o la cuenta a mano.>
-
-**Dos casos de ejemplo.**
-
-| Caso inventado | Valores | Salida del sistema |
-|---|---|---|
-| A | <…> | <SÍ/NO> |
-| B | <…> | <SÍ/NO> |
-
-## 3. Medición
-
-**Entrenamiento (casos 1–14)**
-
-| | Predice SÍ | Predice NO |
-|---|---|---|
-| **Real SÍ** | VP = <> | FN = <> |
-| **Real NO** | FP = <> | VN = <> |
-
-**Prueba (casos 15–20)**
-
-| | Predice SÍ | Predice NO |
-|---|---|---|
-| **Real SÍ** | VP = <> | FN = <> |
-| **Real NO** | FP = <> | VN = <> |
-
-| Métrica | Entrenamiento | Prueba |
-|---|---|---|
-| Exactitud | <> | <> |
-| Precisión | <> | <> |
-| Sensibilidad | <> | <> |
-| Especificidad | <> | <> |
-
-**Entrenamiento contra prueba.** <¿Hay diferencia? ¿Por qué? ¿Sobreajuste o generalización?>
-
-## 4. El error más caro
-
-<¿Es peor el falso positivo o el falso negativo en su problema? ¿Por qué, según la ficha? ¿Qué cambiaron en el sistema para cometer menos ese error?>
-
-## 5. ¿Comparado contra qué?
-
-**Línea base trivial.** <Qué resultado saca un sistema que responde siempre lo mismo, y cómo se compara el suyo.>
-
-| Checklist (Clase 6) | Respuesta |
-|---|---|
-| ¿Qué datos? | <> |
-| ¿Qué métrica? | <> |
-| ¿Comparado contra qué? | <> |
-| ¿Quién lo midió? | <> |
-
-## 6. Riesgo: el camino completo
-
-<Datos → modelo → decisión → consecuencia aplicado a su caso. Al menos un riesgo concreto.>
-
-## 7. Bitácora
-
-**Uso de la IA**
-
-| # | Qué le pedimos | Qué aceptamos | Qué rechazamos y por qué |
-|---|---|---|---|
-| 1 | <> | <> | <> |
-
-**Corridas contra el evaluador**
-
-| Corrida | Nota | Agujero que encontró | Qué cambiamos |
-|---|---|---|---|
-| 1 | <> | <> | <> |
+**Objetivo y métrica.** 
+Lo que de verdad importa en el problema es que ninguna bomba se rompa en plena campaña de riego. Quedarse sin regar varios días daña el rendimiento del cultivo y la reparación de urgencia sale mucho más cara que un service programado. 
+La métrica técnica para medirlo es la Sensibilidad (Recall = VP / (VP + FN)). 
+No son lo mismo: la métrica es una cuenta estadística sobre los datos, mientras que el objetivo es la continuidad operativa y económica del campo. Si nos fijáramos solo en la Exactitud, un modelo ingenuo que diga siempre que NO paramos la bomba tendría un 71.4% de exactitud en entrenamiento, pero una Sensibilidad del 0% (se romperían todas las bombas averiadas). Por eso, el sistema se ajusta para priorizar la Sensibilidad por encima de la Exactitud.
